@@ -1,0 +1,256 @@
+{
+  "version": 1,
+  "updated": "2026-10-03",
+  "note": "Picks are based on blind-vote leaderboards, developer surveys, user reviews and hands-on tests, checked on 3 Oct 2026. They are judgment calls, not guarantees, and these tools change fast. Check pricing on each tool's site.",
+  "jobs": [
+    {
+      "id": "chat", "name": "Everyday chat", "hint": "Questions, advice, brainstorming, anything", "hue": 215,
+      "picks": [
+        { "tool": "chatgpt", "why": "The all-rounder most people use: strong at nearly everything, with voice, images and files in one app.", "evidence": "By far the most used AI app, with about 900 million people a week (a16z, March 2026).", "skip": "You want the model that wins blind tests right now. That's Gemini." },
+        { "tool": "gemini", "why": "Wins blind head-to-head votes for overall answer quality, and works inside Android and Google apps.", "evidence": "#1 on the Arena text leaderboard (2 Oct 2026, 8.6 million votes overall).", "skip": "You rarely use Google services." },
+        { "tool": "claude", "why": "Thoughtful, clear answers and very good with long documents.", "evidence": "Claude models hold most of the top 10 spots on the Arena text leaderboard (Oct 2026).", "skip": "You need it to make images." },
+        { "tool": "grok", "why": "Good for what people are saying right now, with live access to X posts.", "skip": "You don't use X." }
+      ],
+      "sources": [
+        { "name": "a16z Top 100 Gen AI Consumer Apps, March 2026", "url": "https://www.a16z.news/p/top-100-gen-ai-consumer-apps-march" },
+        { "name": "Arena text leaderboard (blind human votes)", "url": "https://arena.ai/leaderboard/text" }
+      ]
+    },
+    {
+      "id": "writing", "name": "Writing and editing", "hint": "Emails, articles, rewrites, grammar", "hue": 340,
+      "picks": [
+        { "tool": "claude", "why": "Natural tone, and strong at long pieces and careful edits.", "evidence": "Claude models take 6 of the top 10 places in blind creative-writing votes (Arena, Oct 2026).", "skip": "You need images or layouts made too." },
+        { "tool": "gemini", "why": "Currently #1 in blind creative-writing votes, just ahead of Claude.", "evidence": "#1 on Arena creative writing (Oct 2026), by a small margin on fewer votes.", "skip": "You want the most proven option, since its lead is narrow." },
+        { "tool": "chatgpt", "why": "Flexible for drafts, rewrites and brainstorming in one chat.", "skip": "You want the most natural-sounding long-form writing." },
+        { "tool": "grammarly", "why": "Fixes grammar and tone inside your email, documents and browser.", "skip": "You want a whole draft written for you." }
+      ],
+      "sources": [
+        { "name": "Arena creative writing leaderboard (blind human votes)", "url": "https://arena.ai/leaderboard/text/creative-writing" }
+      ]
+    },
+    {
+      "id": "research", "name": "Research", "hint": "Find facts, compare options, check sources", "hue": 195,
+      "picks": [
+        { "tool": "perplexity", "why": "Fast answers with clickable sources, so you can check claims quickly.", "evidence": "92% of its cited claims checked out in a 20-question test, the best of the four tested (T-Minus AI, Feb 2026).", "skip": "You need a long, polished report." },
+        { "tool": "chatgpt", "why": "Deep research mode turns many sources into a structured report that's ready to share.", "evidence": "OpenAI's model is #1 on the Arena search leaderboard (Aug 2026). About 78% of its citations checked out in the T-Minus AI test.", "skip": "You need every citation to hold up; fewer did in testing." },
+        { "tool": "claude", "why": "Cites fewer sources but weighs them carefully, which helps when the evidence conflicts.", "evidence": "85% of cited claims verifiable (T-Minus AI). Claude is #2 on Arena search.", "skip": "You want lots of sources fast." },
+        { "tool": "gemini", "why": "Deep Research with strong Google Scholar coverage, good for academic topics.", "evidence": "Rated best for academic research in the T-Minus AI test.", "skip": "You don't use Google apps." }
+      ],
+      "sources": [
+        { "name": "T-Minus AI deep research test, Feb 2026", "url": "https://www.tminusai.com/blog/deep-research-ai-showdown-2026" },
+        { "name": "Arena search leaderboard (blind human votes)", "url": "https://arena.ai/leaderboard/search" }
+      ]
+    },
+    {
+      "id": "study", "name": "Study and documents", "hint": "Learn a topic, summarise PDFs and notes", "hue": 150,
+      "picks": [
+        { "tool": "notebooklm", "why": "Answers only from the PDFs, notes and links you add, and can turn them into audio overviews.", "evidence": "Rated the top free choice for reliable, source-based study (April 2026 comparison of 10 study apps).", "skip": "You want answers from the open web." },
+        { "tool": "chatgpt", "why": "The most capable general helper: study mode walks through problems step by step.", "skip": "You can't double-check facts. It can still make things up." },
+        { "tool": "claude", "why": "Explains long readings patiently, and is strong for essays and thesis writing.", "skip": "You want audio or video summaries." },
+        { "tool": "gemini", "why": "A strong free option that works with Google Docs and Drive.", "skip": "You want a tool built for study." }
+      ],
+      "sources": [
+        { "name": "Best AI apps for studying 2026 (Pillitteri)", "url": "https://pasqualepillitteri.it/en/news/745/best-ai-apps-for-studying-2026-kiwi-chatgpt-notebooklm" }
+      ]
+    },
+    {
+      "id": "coding", "name": "Coding", "hint": "Write, fix and ship software", "hue": 255,
+      "picks": [
+        { "tool": "claude-code", "why": "Works across a whole codebase: reads it, plans, edits many files and runs the tests.", "evidence": "Most loved by 46% of 906 engineers (Pragmatic Engineer survey, Feb 2026). Claude Opus 5.5 is #1 on Arena WebDev (1 Oct 2026).", "skip": "You only want small autocomplete suggestions." },
+        { "tool": "cursor", "why": "An editor built around AI, with fast multi-file edits that use your project as context.", "evidence": "Second most loved tool, at 19% (Pragmatic Engineer, 2026).", "skip": "You're happy in your current editor." },
+        { "tool": "codex", "why": "OpenAI's coding agent. It works on tasks in the background and proposes changes.", "evidence": "OpenAI's GPT-6 Astra is #2 on Arena WebDev (Oct 2026).", "skip": "You want to steer every edit live." },
+        { "tool": "github-copilot", "why": "Works in almost any editor, has a free tier, and is the standard at large companies.", "evidence": "Most used tool at companies with 10,000+ staff, at 56% (Pragmatic Engineer, 2026).", "skip": "You want the most capable agent." }
+      ],
+      "sources": [
+        { "name": "Pragmatic Engineer: AI tooling for software engineers in 2026", "url": "https://newsletter.pragmaticengineer.com/p/ai-tooling-2026" },
+        { "name": "Arena WebDev leaderboard (blind human votes)", "url": "https://arena.ai/leaderboard/code" },
+        { "name": "Stack Overflow Developer Survey findings", "url": "https://stackoverflow.blog/2026/09/30/getting-ready-for-2026-results-a-look-back-on-developer-survey-findings" }
+      ]
+    },
+    {
+      "id": "build-app", "name": "Build an app without coding", "hint": "Describe it, get a working app", "hue": 285,
+      "picks": [
+        { "tool": "lovable", "why": "The smoothest start for non-coders: describe it and get a web app with a database and sign-in.", "evidence": "Called the best default for non-technical founders (Vibe Coding Academy, 2026).", "skip": "You need a mobile app or deep customisation." },
+        { "tool": "replit", "why": "The most complete option, with built-in database and hosting and polished results.", "evidence": "Joint winner of a hands-on build test (Technically, Dec 2025).", "skip": "You want predictable costs. Usage billing can surprise you." },
+        { "tool": "v0", "why": "Fast builds and easy publishing. Best if you can read a little code.", "evidence": "Joint winner of the same Technically test.", "skip": "You need the database set up for you." },
+        { "tool": "bolt", "why": "Lower starting price, and it can make mobile apps.", "skip": "You don't want to set up the back end yourself." }
+      ],
+      "sources": [
+        { "name": "Lovable vs Bolt vs Replit (Vibe Coding Academy, 2026)", "url": "https://www.vibecodingacademy.ai/blog/lovable-vs-bolt-vs-replit-comparison-2026" },
+        { "name": "Vibe coding tool comparison (Technically)", "url": "https://read.technically.dev/p/2026-vibe-coding-tool-comparison" }
+      ]
+    },
+    {
+      "id": "images", "name": "Images", "hint": "Art, photos, logos, edits", "hue": 25,
+      "picks": [
+        { "tool": "chatgpt-images", "why": "Wins blind votes for both making and editing images, and follows detailed prompts closely.", "evidence": "#1 on both the Arena text-to-image and image-editing leaderboards (late Sept 2026).", "skip": "You want a distinctive artistic house style." },
+        { "tool": "grok-imagine", "why": "Ranks close behind OpenAI, especially for editing images.", "evidence": "#4 on Arena image editing and #5 on text-to-image (Sept 2026).", "skip": "You don't use Grok or X." },
+        { "tool": "microsoft-copilot", "why": "Microsoft's own image model, MAI-Image, is one of the best for realistic pictures.", "evidence": "MAI-Image is #4 on Arena text-to-image (Sept 2026). It's available in Copilot and Bing Image Creator.", "skip": "You need precise edits to your own photos." },
+        { "tool": "nano-banana", "why": "Handy for quick edits to your own photos inside Gemini.", "evidence": "In the Arena text-to-image top 10 (Sept 2026).", "skip": "You want the top quality. Newer models now rank higher." },
+        { "tool": "ideogram", "why": "A good choice when the image must contain clear, correct text, such as posters.", "evidence": "Still among a16z's most used image apps (March 2026).", "skip": "You want the most photographic look." },
+        { "tool": "midjourney", "why": "Known for a striking, artistic look.", "evidence": "Its use has fallen sharply, from the top 10 to #46 in a16z's ranking (March 2026), and it isn't in the blind-vote top 10.", "skip": "You need readable text in images or a free plan." }
+      ],
+      "sources": [
+        { "name": "Arena text-to-image leaderboard (blind human votes)", "url": "https://arena.ai/leaderboard/text-to-image" },
+        { "name": "Arena image editing leaderboard (blind human votes)", "url": "https://arena.ai/leaderboard/image-edit" },
+        { "name": "a16z Top 100 Gen AI Consumer Apps, March 2026", "url": "https://www.a16z.news/p/top-100-gen-ai-consumer-apps-march" }
+      ]
+    },
+    {
+      "id": "video", "name": "Video", "hint": "Short clips from text or a picture", "hue": 5,
+      "picks": [
+        { "tool": "gemini-omni", "why": "Top of the blind votes: realistic clips with matching sound, and you can edit them by chatting.", "evidence": "#1 and #2 on the Arena text-to-video leaderboard (21 Sept 2026). It replaced Veo in the Gemini app.", "skip": "You want a free plan. It needs a paid Google AI plan." },
+        { "tool": "dreamina", "why": "ByteDance's Seedance model, near the top on both big leaderboards, with sound and longer clips.", "evidence": "#3 on Artificial Analysis and in the Arena top 10 (Sept 2026).", "skip": "You need the very top-ranked quality." },
+        { "tool": "wan", "why": "Alibaba's video model, ranked #1 by a blind human panel.", "evidence": "#1 on Artificial Analysis text-to-video and #6 on Arena (Sept 2026).", "skip": "You want a polished, simple app around it." },
+        { "tool": "hailuo", "why": "Strong quality for the price.", "evidence": "MiniMax H3 is #4 on Artificial Analysis and #8 on Arena.", "skip": "You need the very top-ranked quality." },
+        { "tool": "kling", "why": "Very popular, and good at people talking with lip-sync.", "evidence": "One of the most used AI video apps (a16z, March 2026). It's no longer in the blind-vote top 10.", "skip": "You want the current top-ranked quality." },
+        { "tool": "runway", "why": "The most control: camera moves, motion brush and editing existing footage.", "skip": "You make long videos, because credits run out fast." }
+      ],
+      "sources": [
+        { "name": "Arena text-to-video leaderboard (blind human votes)", "url": "https://arena.ai/leaderboard/text-to-video" },
+        { "name": "Artificial Analysis text-to-video leaderboard (blind human panel)", "url": "https://artificialanalysis.ai/video/leaderboard/text-to-video" },
+        { "name": "Gemini Omni guide: where to use it", "url": "https://roo.beehiiv.com/p/gemini-omni-complete-guide-2026" }
+      ]
+    },
+    {
+      "id": "voice", "name": "Voiceovers and speech", "hint": "Natural voices, narration, cleaner recordings", "hue": 320,
+      "picks": [
+        { "tool": "elevenlabs", "why": "The most natural synthetic voices in many languages, plus voice cloning.", "evidence": "Eleven v4 took #1 on the Artificial Analysis text-to-speech arena (Sept 2026).", "skip": "You only need to clean up a recording." },
+        { "tool": "google-ai-studio", "why": "A free place to try Google's speech voices, which rank among the best.", "evidence": "Gemini Flash TTS was a top-ranked model before Eleven v4 overtook it (Artificial Analysis).", "skip": "You want a simple voiceover app." },
+        { "tool": "adobe-podcast", "why": "Cleans up noisy recordings so they sound like a studio.", "skip": "You need a voice generated from text." }
+      ],
+      "sources": [
+        { "name": "Artificial Analysis text-to-speech leaderboard", "url": "https://artificialanalysis.ai/text-to-speech/leaderboard/provider-voice" }
+      ]
+    },
+    {
+      "id": "music", "name": "Music", "hint": "Songs with vocals, instrumentals", "hue": 300,
+      "picks": [
+        { "tool": "suno", "why": "Makes full songs with vocals from a text description.", "evidence": "Suno v6 is #1 in blind votes for music with vocals (Artificial Analysis).", "skip": "You need precise control over every note." },
+        { "tool": "mureka", "why": "The closest rival in blind votes for songs with vocals.", "evidence": "#3 on the Artificial Analysis vocals leaderboard.", "skip": "You want the top-rated option." },
+        { "tool": "elevenlabs", "why": "Music generation alongside its voices, handy if you already use it.", "evidence": "In the Artificial Analysis vocals top 8.", "skip": "Music is your main need. It ranks below Suno." }
+      ],
+      "sources": [
+        { "name": "Artificial Analysis music leaderboard (blind human panel)", "url": "https://artificialanalysis.ai/music/leaderboard/vocals" }
+      ]
+    },
+    {
+      "id": "slides", "name": "Presentations", "hint": "Slide decks from a brief", "hue": 45,
+      "picks": [
+        { "tool": "gamma", "why": "Builds a full, good-looking deck from a short brief.", "evidence": "Ranked #1 of 12 tools tested on five real decks (Storyflow, May 2026).", "skip": "You need exact brand templates." },
+        { "tool": "microsoft-copilot", "why": "Builds slides inside PowerPoint if your work uses Microsoft 365.", "evidence": "#3 in the same test.", "skip": "You don't pay for Microsoft 365 Copilot. It's a paid add-on." },
+        { "tool": "beautiful-ai", "why": "Keeps every slide consistent with your design rules.", "skip": "You want a permanent free plan." },
+        { "tool": "canva", "why": "An all-in-one design workspace with AI slide tools.", "skip": "You need deep presentation features." }
+      ],
+      "sources": [
+        { "name": "12 AI presentation tools tested on real decks (Storyflow, May 2026)", "url": "https://storyflow.so/blog/best-ai-presentation-tools-2026" }
+      ]
+    },
+    {
+      "id": "design", "name": "Design and graphics", "hint": "App screens, posters, social posts", "hue": 170,
+      "picks": [
+        { "tool": "figma", "why": "The industry-standard design tool, with AI features for layouts and prototypes.", "skip": "You want a finished result from a single prompt." },
+        { "tool": "canva", "why": "Social posts, flyers and simple graphics made quickly.", "evidence": "Its growth has been built around its AI Magic Suite (a16z, March 2026).", "skip": "You need precise interface design." },
+        { "tool": "stitch", "why": "Turns a text description or sketch into app and web screens, and is free.", "skip": "You need a production-ready design system." }
+      ],
+      "sources": [
+        { "name": "a16z Top 100 Gen AI Consumer Apps, March 2026", "url": "https://www.a16z.news/p/top-100-gen-ai-consumer-apps-march" }
+      ]
+    },
+    {
+      "id": "3d", "name": "3D models", "hint": "Models from text or a picture", "hue": 230,
+      "picks": [
+        { "tool": "tripo", "why": "Fast text-to-3D and image-to-3D, and the top pick in blind community votes.", "evidence": "#1 on the 3D Arena leaderboard, from 186,939 votes (Aug 2026).", "skip": "You need clean, production-ready geometry without cleanup." },
+        { "tool": "rodin", "why": "High-quality models from Hyper3D.", "evidence": "Top 6 on the 3D Arena leaderboard (Aug 2026).", "skip": "You need clean, production-ready geometry without cleanup." },
+        { "tool": "meshy", "why": "A popular, easy web app with texturing tools.", "evidence": "Top 8 on the 3D Arena leaderboard (Aug 2026).", "skip": "You want the highest-ranked results." }
+      ],
+      "sources": [
+        { "name": "3D Arena rankings, Aug 2026 (summary by Sloyd, which also appears in the list)", "url": "https://www.sloyd.ai/blog/ai-3d-model-generator-rankings" }
+      ]
+    },
+    {
+      "id": "data", "name": "Data and spreadsheets", "hint": "Analyse numbers, charts, formulas", "hue": 125,
+      "picks": [
+        { "tool": "chatgpt", "why": "Upload a spreadsheet and it cleans data, explains formulas, runs the analysis and draws charts.", "evidence": "Rated best overall for spreadsheet work (aipedia, June 2026).", "skip": "You can't double-check the numbers." },
+        { "tool": "microsoft-copilot", "why": "Built into Excel for formulas, summaries and charts.", "skip": "You don't have Microsoft 365. It also needs files saved online." },
+        { "tool": "gemini", "why": "Built into Google Sheets for formulas and summaries.", "skip": "You work in Excel." },
+        { "tool": "claude", "why": "Best at reviewing assumptions and writing up what the numbers mean.", "evidence": "Rated best for review and written analysis (aipedia, June 2026).", "skip": "You need it to be your calculator." }
+      ],
+      "sources": [
+        { "name": "Best AI for Excel and spreadsheets (aipedia, June 2026)", "url": "https://aipedia.wiki/guides/best-ai-for-excel/" }
+      ]
+    },
+    {
+      "id": "meetings", "name": "Meetings and notes", "hint": "Transcribe, summarise, find action items", "hue": 70,
+      "picks": [
+        { "tool": "fathom", "why": "Free for individuals, with unlimited recordings, transcripts and summaries.", "evidence": "Named best overall AI meeting note taker (TechRepublic, 28 Sept 2026).", "skip": "You need team features. Those are paid." },
+        { "tool": "granola", "why": "Takes notes without a bot joining your call.", "evidence": "Picked as the best bot-free option (TechRepublic, Sept 2026).", "skip": "You need your full history on the free plan." },
+        { "tool": "fireflies", "why": "Handles lots of meetings and connects to many apps.", "skip": "You only want a simple free notetaker." },
+        { "tool": "otter", "why": "Live transcription and a searchable archive.", "skip": "Your calls run long. The free plan stops at 30 minutes a conversation." }
+      ],
+      "sources": [
+        { "name": "Best AI meeting note takers for 2026 (TechRepublic)", "url": "https://www.techrepublic.com/article/news-best-ai-meeting-note-takers-2026/" }
+      ]
+    },
+    {
+      "id": "automation", "name": "Automate boring tasks", "hint": "Connect apps so things happen by themselves", "hue": 100,
+      "picks": [
+        { "tool": "zapier", "why": "The easiest to start with, and it connects thousands of apps.", "evidence": "4.5 stars from 2,088 G2 reviews. Ease of use is its most praised point.", "skip": "Cost matters. Price is the top complaint on G2." },
+        { "tool": "n8n", "why": "Open source and flexible, and the highest rated by its users.", "evidence": "4.7 stars from 301 G2 reviews.", "skip": "You don't want a learning curve." },
+        { "tool": "make", "why": "A visual builder for complex, multi-step flows.", "skip": "You want the simplest possible setup." }
+      ],
+      "sources": [
+        { "name": "Zapier vs n8n (G2 user reviews)", "url": "https://www.g2.com/compare/zapier-vs-n8n" }
+      ]
+    }
+  ],
+  "tools": {
+    "chatgpt": { "name": "ChatGPT", "maker": "OpenAI", "url": "https://chatgpt.com", "price": "Free + paid", "blurb": "General-purpose assistant for chat, files, voice, images and research." },
+    "claude": { "name": "Claude", "maker": "Anthropic", "url": "https://claude.ai", "price": "Free + paid", "blurb": "Assistant known for careful writing, long documents and coding." },
+    "gemini": { "name": "Gemini", "maker": "Google", "url": "https://gemini.google.com", "price": "Free + paid", "blurb": "Google's assistant, built into Android, Search and Google apps." },
+    "grok": { "name": "Grok", "maker": "SpaceXAI (formerly xAI)", "url": "https://grok.com", "price": "Free + paid", "blurb": "Assistant with live access to posts on X." },
+    "perplexity": { "name": "Perplexity", "maker": "Perplexity", "url": "https://www.perplexity.ai", "price": "Free + paid", "blurb": "Answer engine that shows its sources." },
+    "grammarly": { "name": "Grammarly", "maker": "Grammarly", "url": "https://www.grammarly.com", "price": "Free + paid", "blurb": "Grammar, clarity and tone checks wherever you write." },
+    "notebooklm": { "name": "NotebookLM", "maker": "Google", "url": "https://notebooklm.google.com", "price": "Free + paid", "blurb": "Study assistant that works only from your own sources." },
+    "claude-code": { "name": "Claude Code", "maker": "Anthropic", "url": "https://claude.com/product/claude-code", "price": "Paid", "blurb": "Coding agent that works across your whole project." },
+    "cursor": { "name": "Cursor", "maker": "Anysphere", "url": "https://cursor.com", "price": "Free + paid", "blurb": "Code editor built around AI." },
+    "github-copilot": { "name": "GitHub Copilot", "maker": "GitHub", "url": "https://github.com/features/copilot", "price": "Free + paid", "blurb": "AI coding help inside popular editors and on GitHub." },
+    "codex": { "name": "Codex", "maker": "OpenAI", "url": "https://openai.com/codex", "price": "Paid", "blurb": "OpenAI's coding agent for background tasks." },
+    "lovable": { "name": "Lovable", "maker": "Lovable", "url": "https://lovable.dev", "price": "Free + paid", "blurb": "Builds web apps from a description." },
+    "bolt": { "name": "Bolt.new", "maker": "StackBlitz", "url": "https://bolt.new", "price": "Free + paid", "blurb": "Builds and runs full web apps in the browser." },
+    "v0": { "name": "v0", "maker": "Vercel", "url": "https://v0.app", "price": "Free + paid", "blurb": "Generates web apps and interface pieces from prompts." },
+    "replit": { "name": "Replit", "maker": "Replit", "url": "https://replit.com", "price": "Free + paid", "blurb": "Build, run and host apps from one browser workspace." },
+    "chatgpt-images": { "name": "ChatGPT Images", "maker": "OpenAI", "url": "https://chatgpt.com", "price": "Free + paid", "blurb": "Image generation and editing inside ChatGPT, using OpenAI's GPT Image models." },
+    "grok-imagine": { "name": "Grok Imagine", "maker": "SpaceXAI (formerly xAI)", "url": "https://grok.com", "price": "Free + paid", "blurb": "Image and video generation inside Grok." },
+    "nano-banana": { "name": "Nano Banana", "maker": "Google", "url": "https://gemini.google.com", "price": "Free + paid", "blurb": "Google's image generation and editing model, used in Gemini." },
+    "ideogram": { "name": "Ideogram", "maker": "Ideogram", "url": "https://ideogram.ai", "price": "Free + paid", "blurb": "Image generator that is good at text inside images." },
+    "midjourney": { "name": "Midjourney", "maker": "Midjourney", "url": "https://www.midjourney.com", "price": "Paid", "blurb": "Image generator known for its artistic look." },
+    "gemini-omni": { "name": "Gemini Omni", "maker": "Google", "url": "https://gemini.google.com", "price": "Paid", "blurb": "Google's video model in the Gemini app and Flow, with sound and chat-based editing." },
+    "dreamina": { "name": "Dreamina (Seedance)", "maker": "ByteDance (CapCut)", "url": "https://dreamina.capcut.com", "price": "Free + paid", "blurb": "ByteDance's creative app for the Seedance video models." },
+    "wan": { "name": "Wan", "maker": "Alibaba", "url": "https://wan.video", "price": "Free + paid", "blurb": "Alibaba's video and image generation platform." },
+    "hailuo": { "name": "Hailuo", "maker": "MiniMax", "url": "https://hailuoai.video", "price": "Free + paid", "blurb": "MiniMax's video and image app, using its H3 model." },
+    "kling": { "name": "Kling", "maker": "Kuaishou", "url": "https://klingai.com", "price": "Free + paid", "blurb": "Popular video generator, strong with people and lip-sync." },
+    "runway": { "name": "Runway", "maker": "Runway", "url": "https://runwayml.com", "price": "Free + paid", "blurb": "Video generation and editing tools for creators." },
+    "elevenlabs": { "name": "ElevenLabs", "maker": "ElevenLabs", "url": "https://elevenlabs.io", "price": "Free + paid", "blurb": "Realistic voices, voice cloning and music generation." },
+    "google-ai-studio": { "name": "Google AI Studio", "maker": "Google", "url": "https://aistudio.google.com", "price": "Free + paid", "blurb": "Google's workspace for trying its latest models, including speech." },
+    "adobe-podcast": { "name": "Adobe Podcast", "maker": "Adobe", "url": "https://podcast.adobe.com", "price": "Free + paid", "blurb": "Studio-quality cleanup for voice recordings." },
+    "suno": { "name": "Suno", "maker": "Suno", "url": "https://suno.com", "price": "Free + paid", "blurb": "Turns a description into a full song." },
+    "mureka": { "name": "Mureka", "maker": "Mureka", "url": "https://www.mureka.ai", "price": "Free + paid", "blurb": "Song, vocal and instrumental generator." },
+    "gamma": { "name": "Gamma", "maker": "Gamma", "url": "https://gamma.app", "price": "Free + paid", "blurb": "Creates slide decks and web pages from a brief." },
+    "beautiful-ai": { "name": "Beautiful.ai", "maker": "Beautiful.ai", "url": "https://www.beautiful.ai", "price": "Paid", "blurb": "Slide maker that keeps designs consistent automatically." },
+    "canva": { "name": "Canva", "maker": "Canva", "url": "https://www.canva.com", "price": "Free + paid", "blurb": "Design editor with templates and AI tools." },
+    "microsoft-copilot": { "name": "Microsoft Copilot", "maker": "Microsoft", "url": "https://copilot.microsoft.com", "price": "Free + paid", "blurb": "Microsoft's assistant, with its own image model and paid features inside Microsoft 365 apps." },
+    "figma": { "name": "Figma", "maker": "Figma", "url": "https://www.figma.com", "price": "Free + paid", "blurb": "Collaborative interface design tool with AI features." },
+    "stitch": { "name": "Google Stitch", "maker": "Google", "url": "https://stitch.withgoogle.com", "price": "Free", "blurb": "Turns prompts and sketches into app and web screens." },
+    "tripo": { "name": "Tripo", "maker": "VAST", "url": "https://www.tripo3d.ai", "price": "Free + paid", "blurb": "Generates 3D models from text or images." },
+    "rodin": { "name": "Rodin", "maker": "Hyper3D", "url": "https://hyper3d.ai", "price": "Free + paid", "blurb": "Generates high-quality 3D models from images or text." },
+    "meshy": { "name": "Meshy", "maker": "Meshy", "url": "https://www.meshy.ai", "price": "Free + paid", "blurb": "Generates and textures 3D models from text or images." },
+    "fathom": { "name": "Fathom", "maker": "Fathom (part of Superhuman)", "url": "https://www.fathom.ai", "price": "Free + paid", "blurb": "Records, transcribes and summarises Zoom, Meet and Teams calls." },
+    "granola": { "name": "Granola", "maker": "Granola", "url": "https://www.granola.ai", "price": "Free + paid", "blurb": "Meeting notes without a bot joining the call." },
+    "fireflies": { "name": "Fireflies", "maker": "Fireflies.ai", "url": "https://fireflies.ai", "price": "Free + paid", "blurb": "Records and summarises calls, with action items." },
+    "otter": { "name": "Otter", "maker": "Otter.ai", "url": "https://otter.ai", "price": "Free + paid", "blurb": "Meeting transcription and summaries." },
+    "zapier": { "name": "Zapier", "maker": "Zapier", "url": "https://zapier.com", "price": "Free + paid", "blurb": "Connects apps and automates tasks between them." },
+    "make": { "name": "Make", "maker": "Make", "url": "https://www.make.com", "price": "Free + paid", "blurb": "Visual automation builder for multi-step workflows." },
+    "n8n": { "name": "n8n", "maker": "n8n", "url": "https://n8n.io", "price": "Free + paid", "blurb": "Open-source workflow automation you can host yourself." }
+  }
+}
